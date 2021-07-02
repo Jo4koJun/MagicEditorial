@@ -1,0 +1,299 @@
+*{margin:0; padding:0; font-family: "Lexend";}
+
+/**Encabezado**/
+header{width: 100%;height: 466px; background: linear-gradient(to right, #350e5e, #160523);}
+
+/*menu*/
+#top{background: rgba(255,255,255,.1); box-shadow: 0 5px 15px rgba(0,0,0,.2);}
+
+nav{display:flex; justify-content:center;}
+nav a{height:50%; width:5.5%; margin-top: 1.4%; text-align:center; padding:0 3%; color:white; text-decoration:none; font-size: 104%; letter-spacing: 3px;}
+nav img{height: 330%; width: 55%; margin-top: -23%;}
+
+nav img:hover{
+	transition: 3s;
+	transform: scale(4) translateY(50px);
+}
+
+.efecto::after{content: ''; display: block;width: 0; height: 3px; background: white; transition: width .3s;}
+.efecto:hover::after {width: 100%; transition: width .3s;}
+
+hr{border:none; background: white; height: 0.7%;}
+/*menu*/
+
+/*carrusel*/
+.slider{
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	overflow: hidden;
+	background-color: black;
+}
+
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 300%;
+	animation: cambio 25s infinite alternate;
+	animation-timing-function: ease;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width:100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	25% {margin-left: 0;}
+
+	35% {margin-left: -100%;}
+	55% {margin-left: -100%;}
+
+	65% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+/*carrusel*/
+/**Encabezado**/
+
+#contenedor{width: 100%; height: 2100px; background: white; padding-top: 50px;}
+
+#titulo{justify-content:center; align-items:center; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,.2);}
+#titulo h1{text-transform: uppercase; color: white; font-weight: 400; padding: 0.5%; background: linear-gradient(to right, #350e5e, #160523);}
+
+/*libros primera fila*/
+.container_card{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.card_father{
+	display: block;
+}
+
+.card_father:hover .card{
+	transform: rotateY(180deg);
+}
+
+.card{
+	width: 315px;
+	height: 400px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 600ms;
+}
+
+.card_front{
+	background-size: cover;
+	background-position: center;
+}
+
+.card_front,.card_back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	border-radius: 20px;
+	margin-top: 100px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.4); 
+}
+
+.card_back{
+	transform: rotateY(180deg);
+	background: linear-gradient(to right, #350e5e, #160523);
+}
+
+.body_card_front{
+    transform: translateZ(60px);
+}
+
+.body_card_back{
+	padding: 40px;
+	text-align: center;
+}
+.body_card_back h2{
+    margin-top: 30px;
+    font-size: 25px;
+    color:white;
+}
+.body_card_back p{
+    margin-top: 10px;
+    font-size: 15px;
+    color:rgba(255,255,255,.7);
+}
+/*libros primera fila*/
+
+/*precio-boton*/
+#precio{
+	margin-top: 12%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#precio{
+	color:black;
+}
+#info2{
+	justify-content: space-around;
+	display: flex;
+
+}
+
+.botones{
+	margin-top: 3%;
+	margin-left: 0.1%;
+}
+
+.botones a{
+	text-align:center; 
+	color: white; 
+	text-decoration:none; 
+	font-size: 70%;
+	font-weight: 400; 
+	letter-spacing: 8.5px;
+	padding: 12px 8px 12px 18px;
+	background: #350e5e;
+	text-transform: uppercase;
+	border-radius: 50px;
+}
+
+.botones:hover a{
+	color: white;
+	background: #a30700;
+	box-shadow: 0 5px 15px rgba(0,0,0,.9) 
+}
+
+/**footer-predeterminado**/
+footer{width: 100%; height: 280px; background: #cfd5e3; padding-top: 4%;}
+
+#contenedorfot{
+	max-width: 100%;
+	margin: auto; 
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+.columnas{
+	width:16%;
+	padding: 0 8px; 
+}
+.columnas h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columnas h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.columnas ul{
+	list-style: none;
+}
+.columnas ul li{
+	margin-bottom: 5%;
+}
+.columnas ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease; 
+}
+.columnas ul li a:hover{
+	color: purple;
+	padding-left: 10px;
+}
+
+.columnas .medios a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background: #350e5e;
+	margin: 0 10px 10px 0;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 36px;
+	border-radius: 50%;
+	color: white;
+}
+.columnas .medios a:hover{
+	color: #350e5e;
+	background: white;
+	transition: all 0.5s ease;
+}
+
+/*primera columna*/
+.columna1{
+	width: 25%;
+}
+.columna1 h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columna1 h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.columna1 ul{
+	list-style: none;
+}
+
+.columna1 ul li{
+	margin-bottom: 5%;
+}
+.columna1 ul li a{
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.columna1 ul li i{
+	font-size: 18px;
+	padding-right: 8px; 
+}
+/*primera columna*/
+
+.copy{
+	background: white;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 2.5%;
+	color: #cfd5e3;
+	font-size: 15px;
+}
+/**footer**/
