@@ -1,0 +1,221 @@
+*{margin:0; padding:0; font-family: "Lexend";}
+
+/*Encabezado*/
+header{width: 100%;height: 59px; background: linear-gradient(to right, #350e5e, #160523);}
+
+#top{background: rgba(255,255,255,.1); box-shadow: 0 5px 15px rgba(0,0,0,.2);}
+
+nav{display:flex; justify-content:center;}
+nav a{height:50%; width:5.5%; margin-top: 1.4%; text-align:center; padding:0 3%; color:white; text-decoration:none; font-size: 104%; letter-spacing: 3px;}
+nav img{height: 330%; width: 55%; margin-top: -23%;}
+
+nav img:hover{
+	transition: 3s;
+	transform: scale(2) translateY(45px);
+}
+
+.efecto::after{content: ''; display: block;width: 0; height: 3px; background: white; transition: width .3s;}
+.efecto:hover::after {width: 100%; transition: width .3s;}
+
+hr{border:none; background: white; height: 5%;}
+/*Encabezado*/
+
+#contenedor{width: 100%; height: 950px; background: #a5b0cb;}
+
+/**Registro**/
+body{color: white;}
+
+.loginform{
+	margin-top: 70px;
+	margin-bottom: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(img/register/3.jpg);	
+	width: 380px;
+	padding: 50px 30px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 60px rgba(0,0,0,.3);
+}
+
+.loginform h1{
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 2em;
+	color: white;
+}
+
+label{color: white;}
+
+input{opacity: .2;}
+
+.control input{
+	width: 95%;
+	display: block;
+	padding: 10px;
+	color: #222;
+	border:  none;
+	outline:  none;
+	margin: 1em 0;
+}
+.control2 input{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	color: #222;
+	border:  none;
+	outline:  none;
+	margin: 2em 0;
+}
+.control2 input[type="submit"]{
+	background: blueviolet ;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	opacity: .7;
+	transition: opacity .3s ease;
+}
+.control2 input[type="submit"]:hover{
+	opacity: 1;
+}
+.link{
+	text-align: center;
+}
+.link a{
+	text-decoration: none;
+	color: #fff;
+	opacity: .6;
+	transition: opacity .3s ease;
+}
+.link a:hover{
+	opacity: 1;
+}
+/**registro**/
+
+
+/**footer-predeterminado**/
+footer{width: 100%; height: 280px; background: #cfd5e3; padding-top: 4%;}
+
+#contenedorfot{
+	max-width: 100%;
+	margin: auto; 
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+.columnas{
+	width:16%;
+	padding: 0 8px; 
+}
+.columnas h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columnas h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.columnas ul{
+	list-style: none;
+}
+.columnas ul li{
+	margin-bottom: 5%;
+}
+.columnas ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease; 
+}
+.columnas ul li a:hover{
+	color: purple;
+	padding-left: 10px;
+}
+
+.columnas .medios a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background: #350e5e;
+	margin: 0 10px 10px 0;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 36px;
+	border-radius: 50%;
+	color: white;
+}
+.columnas .medios a:hover{
+	color: #350e5e;
+	background: white;
+	transition: all 0.5s ease;
+}
+
+/*primera columna*/
+.columna1{
+	width: 25%;
+}
+.columna1 h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columna1 h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.columna1 ul{
+	list-style: none;
+}
+
+.columna1 ul li{
+	margin-bottom: 5%;
+}
+.columna1 ul li a{
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.columna1 ul li i{
+	font-size: 18px;
+	padding-right: 8px; 
+}
+/*primera columna*/
+
+.copy{
+	background: white;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 2.5%;
+	color: #cfd5e3;
+	font-size: 15px;
+}
+/**footer**/

@@ -1,0 +1,402 @@
+*{margin:0; padding:0; font-family: "Lexend";}
+
+/**Encabezado**/
+audio{
+	width: 100%;
+	height: 12px;
+
+}
+header{width: 100%;height: 645px; background-image: url(img/menu/banner.png); background-size: 113% 108%; background-repeat: no-repeat; background-position: center;}
+
+#top{background: rgba(255,255,255,.3); box-shadow: 0 5px 15px rgba(0,0,0,.2);}
+
+nav{display:flex; justify-content:center;}
+nav a{height:50%; width:5.5%; margin-top: 1.4%; text-align:center; padding:0 3%; color:white; text-decoration:none; font-size: 104%; letter-spacing: 3px;}
+nav img{height: 330%; width: 55%; margin-top: -23%;}
+
+nav img:hover{
+	transition: 3s;
+	transform: scale(7.5) translateY(39px);
+}
+
+.efecto::after{content: ''; display: block;width: 0; height: 3px; background: white; transition: width .3s;}
+.efecto:hover::after {width: 100%; transition: width .3s;}
+/**Encabezado**/
+
+#contenedor{width: 100%; height: 560px; background: #a5b0cb; box-shadow: 0 -50px 60px 28px #a5b0cb;}
+
+/**Magic Editorial**/
+#primero{padding-top: 14%;display: grid; grid-template-columns:60% 40%;}
+
+#MagicA{flex-direction: column; width:70%; padding-left: 15.3%;}
+#MagicA h3{font-size: 9.7px; color:white; font-weight: 400; padding: 4px 0 6px 0; text-transform: uppercase; letter-spacing: 3px;}
+#MagicA h2{font-size: 37.7px; color:white; font-weight: 500; padding-bottom: 15.5px; letter-spacing: 8px; text-shadow: 0 0 15px rgba(0,0,0,.2);}
+#MagicA p{font-size: 12.5px; margin-bottom: 15px; color:white; width: 98%; font-weight: 400; letter-spacing: 3.2px; line-height: 158%;}
+
+/*boton efecto*/
+#MagicA a{
+	position: relative;
+	display: inline-block;
+	margin-left: 60%;
+	margin-top: 1.3%;
+	padding: 11px 13px;
+	color: #a5b0cb;
+	background: white; 
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 13px;
+	overflow: hidden;
+}
+#MagicA a:hover{
+	background: rgb(0,0,0,0);
+	color: white;
+	transition: 0.2s;
+}
+#MagicA a span{
+	position: absolute;
+	display: block;
+}
+#MagicA a span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 6px;
+	background: linear-gradient(90deg,transparent,white)
+}
+#MagicA a:hover span:nth-child(1){
+	left: 100%;
+	transition: 1s;
+}
+
+#MagicA a span:nth-child(3){
+	bottom: 0;
+	right:-100%;
+	width: 100%;
+	height: 6px;
+	background: linear-gradient(90deg,transparent,white)
+}
+#MagicA a:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.6s;
+}
+
+#MagicA a span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 6px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,white)
+}
+#MagicA a:hover span:nth-child(2){
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+#MagicA a span:nth-child(4){
+	bottom: -100%;
+	left: 0;
+	width: 6px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,white)
+}
+#MagicA a:hover span:nth-child(4){
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.99s;
+}
+/*boton efecto*/
+/*gif*/
+#MagicB{padding-top: 2.4%; position: relative;}
+div #nube1{left: -10%; top:42%; width: 50%; z-index: 2; position: absolute;}
+div #nube2{left: 34%; top:34%; width: 60%; z-index: 1; position: absolute;}
+#gif{width: 78%; height: 79%; border-radius: 68%; box-shadow: 0 5px 25px rgba(0,0,0,.2); z-index: 3;}
+/**Magic Editorial**/
+
+/**presentación de libros**/
+#contenedor2{width: 100%; height: 885px; background: #acb6cf;}
+
+#titulo{justify-content:center; align-items:center; text-align: center; padding-top: 8%;}
+#titulo h2{text-transform: uppercase; font-weight: 400; color: white; letter-spacing: 9px; font-size: 28px; text-shadow: 4px 2px 13px rgba(0,0,0,.1);}
+#titulo h1{text-transform: uppercase; font-weight: 800; font-family:'Assistant'; color: white; letter-spacing: 2px; font-size: 53px; text-shadow: 4px 2px 13px rgba(0,0,0,.1);}
+
+.libros{display: flex; justify-content: center; margin-top: 4%;}
+
+/*efecto*/
+.card{
+	width: 15%; 
+	height: 269px; 
+	padding: 5% 4%;
+	margin: 3%; 
+	background: white; 
+	position: relative; 
+	display: flex; 
+	align-items: flex-end; 
+	box-shadow: 0px 7px 10px rgba(0,0,0,0.2);}
+
+.card:before{
+	content:'';
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+	background: linear-gradient(to bottom, rgba(121,0,182,0.5), rgba(14,14,14,100));
+	z-index:2;
+	opacity: 0;
+}
+
+.card:hover:before{
+	opacity: 1;
+	transition: 0.5s all;
+}
+
+.card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.card .info{
+	position: relative;
+	z-index: 3;
+	color: white;
+	opacity: 0;
+	width: 100%;
+	height: 110%;
+}
+
+.card:hover .info{
+	opacity: 1;
+	transition: 0.5s all
+}
+
+.card .info h1{
+	margin-bottom: 12%;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+.linea{position: relative;}
+.linea::after{
+	content: '';
+	position: absolute;
+	height: 4px;
+	background: #b9a9ce;
+	width: 100%;
+	left: 0;
+	bottom: -45%;
+}
+
+.card .info p{
+	letter-spacing: 1px;
+	font-size: 10px;
+	margin-top: 8px;
+	margin-bottom: 11%; 
+	text-align: justify;
+	white-space: pre-line;
+	line-height: 150%;
+}
+
+.card .info .button{
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	background: #fff;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.compra{display:flex; justify-content:center;}
+.compra a{
+	text-align:center; 
+	color:white; 
+	text-decoration:none; 
+	font-size: 108%; 
+	letter-spacing: 8.5px;
+	padding: 12px 13px 12px 18px;
+	background: #a30700;
+	text-transform: uppercase;
+	margin: 9.2%;
+	margin-top: 0;
+}
+/*efecto*/
+/**presentación de libros**/
+
+#contenedor3{width: 100%; height: 450px; background: #a5b0cb;}
+
+/**presentación**/
+.equipo{
+	display: flex;
+	justify-content: space-around;
+}
+
+.equipo .integrantes{
+	background: linear-gradient(to right, #350e5e, #160523);
+	display: flex;
+	width: 42%;
+	height: 241px;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 8px;
+	margin-top: 7%;
+	box-shadow: 0 5px 25px rgba(0,0,0,.3)
+}
+
+.equipo .integrantes img{
+	width: 110px;
+	height: 110px;
+	object-fit: cover;
+	border: 3px solid white; 
+	border-radius: 50%;
+	display: block;
+}
+
+.equipo .integrantes > .info{
+	width: 55%;
+	color: white;
+}
+.equipo .integrantes > .info h2{
+	font-size: 18px;
+}
+.equipo .integrantes > .info p{
+	font-size: 12px;
+	margin-top: 1.5%;
+}
+/**presentación**/
+
+hr{border:none; background: white; height: 1.4%; margin-top: 6%;}
+
+/**footer-predeterminado**/
+footer{width: 100%; height: 280px; background: #cfd5e3; padding-top: 4%;}
+
+#contenedorfot{
+	max-width: 100%;
+	margin: auto; 
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+.columnas{
+	width:16%;
+	padding: 0 8px; 
+}
+.columnas h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columnas h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.columnas ul{
+	list-style: none;
+}
+.columnas ul li{
+	margin-bottom: 5%;
+}
+.columnas ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease; 
+}
+.columnas ul li a:hover{
+	color: purple;
+	padding-left: 10px;
+}
+
+.columnas .medios a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background: #350e5e;
+	margin: 0 10px 10px 0;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 36px;
+	border-radius: 50%;
+	color: white;
+}
+.columnas .medios a:hover{
+	color: #350e5e;
+	background: white;
+	transition: all 0.5s ease;
+}
+
+/*primera columna*/
+.columna1{
+	width: 25%;
+}
+.columna1 h4{
+	font-size: 17px;
+	color: #350e5e;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.columna1 h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #350e5e;
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.columna1 ul{
+	list-style: none;
+}
+
+.columna1 ul li{
+	margin-bottom: 5%;
+}
+.columna1 ul li a{
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.columna1 ul li i{
+	font-size: 18px;
+	padding-right: 8px; 
+}
+/*primera columna*/
+
+.copy{
+	background: white;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 2.5%;
+	color: #cfd5e3;
+	font-size: 15px;
+}
+/**footer**/
